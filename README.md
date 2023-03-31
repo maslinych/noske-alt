@@ -24,7 +24,7 @@ info](https://packages.altlinux.org/en/sisyphus/srpms/crystal-open/)
 and [download links](https://packages.altlinux.org/en/sisyphus/srpms/crystal-open/rpms/).
 
 The latest docker tag corresponds to the current version of
-the crystal-open package in Sisyphus: `2.130.1-alt2`.
+the crystal-open package in Sisyphus: `2.130.1-alt4`.
 
 ### How to use
 
@@ -37,7 +37,7 @@ should be replaced with the name of this image. For example, the
 command to run the image on Linux would look like this:
 
 ```
-docker run --rm -it -v $(pwd)/verticals:/var/lib/manatee/data/verticals -v $(pwd)/configuration-files:/var/lib/manatee/registry -p 8080:8080 -e CORPLIST=my_corpus maslinych/noske-alt:2.130.1-alt2
+docker run --rm -it -v $(pwd)/verticals:/var/lib/manatee/data/verticals -v $(pwd)/configuration-files:/var/lib/manatee/registry -p 8080:8080 -e CORPLIST=my_corpus maslinych/noske-alt:2.130.1-alt4
 ```
 
 ### Credits
@@ -55,3 +55,15 @@ on github:
 
 The source for this image is available on github:
 [https://github.com/maslinych/noske-alt](https://github.com/maslinych/noske-alt). 
+
+
+### ChangeLog
+
+* `2.130.1-alt4` 31/03/2023 — Bugfix release
+
+  * FIX: attribute values in layered display will keep their vertical position (layer) 
+     when some of the previous attributes are empty
+  * FIX: concordance rows now do not shrink vertically on mouse hover
+
+* `2.130.1-alt2` 06/03/2023 — Initial release
+
