@@ -24,7 +24,7 @@ info](https://packages.altlinux.org/en/sisyphus/srpms/crystal-open/)
 and [download links](https://packages.altlinux.org/en/sisyphus/srpms/crystal-open/rpms/).
 
 The latest docker tag corresponds to the current version of
-the crystal-open package in Sisyphus: `2.130.1-alt4`.
+the crystal-open package in Sisyphus: `2.130.1-alt4-1`.
 
 ### How to use
 
@@ -37,7 +37,7 @@ should be replaced with the name of this image. For example, the
 command to run the image on Linux would look like this:
 
 ```
-docker run --rm -it -v $(pwd)/verticals:/var/lib/manatee/data/verticals -v $(pwd)/configuration-files:/var/lib/manatee/registry -p 8080:8080 -e CORPLIST=my_corpus maslinych/noske-alt:2.130.1-alt4
+docker run --rm -it -v $(pwd)/verticals:/var/lib/manatee/data/verticals -v $(pwd)/configuration-files:/var/lib/manatee/registry -p 8080:8080 -e CORPLIST=my_corpus maslinych/noske-alt:2.130.1-alt4-1
 ```
 
 ### Credits
