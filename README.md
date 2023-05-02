@@ -59,6 +59,13 @@ The source for this image is available on github:
 
 ### ChangeLog
 
+
+* `2.130.1-alt4-1` 2/05/2023 — Bugfix release
+
+  * FIX: a workaround for aligned corpora compilation: compilecorp is ran twice,
+    first with --no-alignsizes (to compile indices) then with --recompile-sizes
+    (to compile aligned sizes)
+
 * `2.130.1-alt4` 31/03/2023 — Bugfix release
 
   * FIX: attribute values in layered display will keep their vertical position (layer) 
